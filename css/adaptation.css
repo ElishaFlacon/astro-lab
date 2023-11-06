@@ -10,6 +10,9 @@
   .team__heading {
     font-size: 2rem;
   }
+  .roadmap__heading {
+    font-size: 18px;
+  }
   .footer__main {
     font-size: 1rem;
   }
@@ -20,11 +23,15 @@
     font-size: 10px;
   }
   .menu__mainimg {
-    max-height: 40px;
+    max-height: 32px;
     width: auto;
   }
+  .footer__content {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 940px) {
   .menu__burger {
     z-index: 10;
     display: block;
@@ -32,6 +39,7 @@
     width: 30px;
     height: 18px;
     cursor: pointer;
+    background: #000;
   }
   .menu__burger span,
   .menu__burger::before,
@@ -94,7 +102,6 @@
     top: 0;
     left: 0;
     height: 50px;
-    background-color: #000;
   }
   .menu__items {
     flex-direction: column;
@@ -106,6 +113,10 @@
   }
   .menu__hrefsold {
     font-size: 24px;
+  }
+  .menu__sold {
+    display: none;
+    visibility: hidden;
   }
 }
 .menu__hrefitem._animation {
