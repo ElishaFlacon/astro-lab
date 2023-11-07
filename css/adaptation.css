@@ -3,6 +3,16 @@
     display: none;
   }
 }
+@media screen and (max-width: 875px) {
+  .footer__content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer__block {
+    flex-direction: column;
+    height: 64px;
+  }
+}
 @media screen and (max-width: 480px) {
   .blocks__heading {
     font-size: 18px;
@@ -29,6 +39,9 @@
   .footer__content {
     flex-direction: column;
     gap: 16px;
+  }
+  .footer__block {
+    height: fit-content;
   }
 }
 @media screen and (max-width: 940px) {

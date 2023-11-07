@@ -187,7 +187,6 @@ body._lock {
 
         img {
             max-width: 900px;
-            max-height: 350px;
         }
     }
 }
@@ -338,13 +337,14 @@ body._lock {
     padding: 250px 0 24px 0;
 
     &__content {
-        justify-content: space-between;
+        justify-content: center;
         display: flex;
         flex-direction: row;
         -webkit-box-pack: center;
         -webkit-box-align: center;
         align-items: center;
         color: #fff;
+        gap: 16px;
     }
 
     &__main {
@@ -370,6 +370,19 @@ body._lock {
         margin: 0 5px 0 5px;
         max-width: 30px;
         height: auto;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__imgblock {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
 }
 
